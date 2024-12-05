@@ -11,7 +11,11 @@ Parameters were obtained through fitting to experimental data in [Rajgor _et al.
 The model was designed as a system of ordinary differential equations:
 
 ```math
-\frac{d[R]}{dt} = k_{-1}*[pR] - NMDA*k_1*[R]\frac{d[pR]}{dt} = NMDA*k_1*[R] - k_{-1}*[pR]
+\frac{d[R]}{dt} = k_{-1}*[pR] - NMDA*k_1*[R]
+```
+
+```math
+\frac{d[pR]}{dt} = NMDA*k_1*[R] - k_{-1}*[pR]
 ```
 
 ```math
